@@ -30,7 +30,7 @@ ol {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -51,7 +51,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
 
 .list {
@@ -79,12 +79,10 @@ body {
 .header {
   border-bottom: 1px solid var(--cornflower);
   background: var(--white);
-  padding: 0 15px 0 15px;
 }
 
 .header-container {
   align-items: center;
-  padding: 0 15px 0 15px;
 }
 
 .nav {
@@ -109,7 +107,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.03em;
   color: var(--navyblue);
   text-decoration: none;
   text-transform: uppercase;
@@ -127,26 +125,28 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   padding: 24px 0 24px 0;
   display: block;
 }
 
 .header-email {
+  display: block;
   color: var(--slate);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   padding: 24px 0 24px 0;
 }
 
 .header-tel {
+  display: block;
   color: var(--slate);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   padding: 24px 0 24px 0;
 }
 
@@ -162,7 +162,7 @@ body {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 
   text-align: center;
   color: var(--white);
@@ -176,7 +176,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.04em;
   color: var(--white);
 
   min-width: 169px;
@@ -190,6 +190,11 @@ body {
   border-radius: 4px;
   background: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--ocean);
 }
 
 /* ---------------------------benefits------------------- */
@@ -220,7 +225,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   color: var(--navyblue);
 
   margin-bottom: 8px;
@@ -233,6 +238,10 @@ body {
 
 /* --------------------work---------------- */
 
+.work {
+  padding-top: 0;
+}
+
 .work-title {
   color: var(--navyblue);
 
@@ -240,12 +249,11 @@ body {
   font-family: Roboto;
   font-weight: 700;
   line-height: 1.12;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
 
-  max-width: 323px;
-  margin: 0 auto 72px auto;
+  margin-bottom: 72px;
 }
 
 .work-list {
@@ -264,12 +272,11 @@ body {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.12;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
 
-  max-width: 162px;
-  margin: 0 auto 72px auto;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -295,7 +302,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -335,7 +342,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.04em;
   color: var(--iris);
 
   border-radius: 4px;
@@ -373,7 +380,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   color: var(--navyblue);
   margin-bottom: 8px;
 }
@@ -398,7 +405,7 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: 1.17;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--cloud);
