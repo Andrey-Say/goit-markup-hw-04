@@ -169,11 +169,14 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(/images/people-office.jpg);
+  max-width: 1440px;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   background-size: cover;
   padding: 188px 0 188px 0;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -348,6 +351,82 @@ body {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.icon-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.icon-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  width: 16px;
+  height: 16px;
+  fill: var(--cloud);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  background-color: var(--ocean);
+}
+
+/* ------------------clients--------------------- */
+
+.clients-title {
+  color: var(--navyblue);
+
+  font-size: 36px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+
+  margin-bottom: 72px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 24px;
+}
+
+.client-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% - 24px * 5) / 6);
+}
+
+.clients-link {
+  display: block;
+  padding: 16px 32px;
+  fill: var(--light-slate);
+  border-radius: 4px;
+  border: 1px solid var(--light-slate);
+}
+
+.client-icon {
+  width: 104px;
+  height: 56px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--ocean);
+  border: 1px solid var(--ocean);
 }
 
 /* ------------------portfolio-------- */
@@ -436,6 +515,13 @@ body {
   padding: 100px 0;
 }
 
+.container-footer {
+  display: flex;
+}
+.footer-block {
+  margin-right: 120px;
+}
+
 .footer-logo {
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
@@ -453,4 +539,47 @@ body {
 .footer-text {
   color: var(--cloud);
   max-width: 264px;
+}
+
+.footer-title {
+  color: var(--white);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-social {
+  display: block;
+}
+
+.footer-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--green);
 }
